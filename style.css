@@ -45,9 +45,12 @@ body {
 *************************************/
 .first {
     display: flex;
+    
+    flex-flow: row;
+    flex-wrap:wrap;
 }
 .first .colored {
-    flex-basis:50%;
+    flex:0 0 50%;
 }
 
 .second {
@@ -81,6 +84,13 @@ body {
 **********Tabled Portrait*************
 *************************************/
 @media (min-width:768px) {
+    .first {
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+    .first .colored {
+        flex:0 0 50%;
+    }
     .fourth {
         display: flex;
     }
